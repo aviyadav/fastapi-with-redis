@@ -14,6 +14,7 @@
 
 ### run application
 > uvicorn main:app --reload
+> uvicorn main:app --reload --host=localhost --port=9090
 
 ### run redis queue (another window from inside virtual env) `only on *nix or WSL2`
 > rq worker task_queue
