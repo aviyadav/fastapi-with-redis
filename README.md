@@ -1,9 +1,21 @@
 # fastapi-with-redis
 
+### create virtual env (on *nix or win)
+- > python -m venv .venv
+
+### acivate the virtual env
+- WIN
+   > .venv\Scripts\Activate.ps1
+- *nix
+   > source .venv/bin/activate
+
+### install the libraries
+> pip install -r requirements.txt
+
 ### run application
 > uvicorn main:app --reload
 
-### run redis queue (from inside virtual env)
+### run redis queue (another window from inside virtual env) `only on *nix or WSL2`
 > rq worker task_queue
 
 ## API 
